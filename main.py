@@ -15,10 +15,11 @@ existing_followers = []
 present_followers = []
 
 # Authenticate to Twitter
-auth = tweepy.OAuthHandler("0vCXY0d749szF6sJ2TUdp050S",
-                        "7QkNqpK1qU2tZO8SuaY6Qs7GRxAxrmLyXuCvPzhGvb0zswzLbw")
-auth.set_access_token("2259569294-mcPgMfJNO7UafgGONRuR0bKjOejIy7qpXP1lpu8",
-                         "Z22Nt5tI1rtEs2eq3ZjrTuma5CMHz5jiANrPknqnBiOXX")
+# Check Twitter developer API for more information
+auth = tweepy.OAuthHandler("xxxxxxxxxxxxxxxxxxxxx",
+                        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+auth.set_access_token("xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                         "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
 # Create API object
 api = tweepy.API(auth, wait_on_rate_limit=True,
@@ -113,7 +114,6 @@ def hello():
 
 
 if __name__ == "__main__":
-    '''
     if False:
         current_date = date        
     else:
@@ -173,3 +173,4 @@ if __name__ == "__main__":
     #retweets(topics)
     message_followers()
     #direct_messages()
+    '''
